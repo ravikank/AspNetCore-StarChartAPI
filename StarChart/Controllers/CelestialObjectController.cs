@@ -37,7 +37,7 @@ namespace StarChart.Controllers
 
             if (!celestialObjects.Any())
             {
-                NotFound();
+                return NotFound();
             }
 
             foreach (var celestialObject in celestialObjects)
